@@ -1,4 +1,4 @@
-# LLM_Lllama2
+# LLM_Lllama2 (RAG-Based)
 
 ## This is a local implementation of Generative AI using ChainLit for creating an application interface, Langchain for tools for chainig prompts and Llama-2 7B Chat model.
 I have added custom pdf (my subject's book pdf) to try out , we can further add custom pdfs by PyPDFLoader
