@@ -67,6 +67,7 @@ def loadllm():
     )
     return llm
 def qa_bot():
+  #loading the embeddings stored in FAISS database and calling the model with the custom_prompt set above and passing the model with others through a retrival conversationa chain of langchain
     embedding = HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2',
                                       model_kwargs={'device': 'cpu'})  # model_kwargs
     db=FAISS.load_local(DATA_FAISS_PATH,embedding)
